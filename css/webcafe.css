@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url('https://necolas.github.io/normalize.css/latest/normalize.css');
 @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+@import url('./fontello.css');
 
 /*초기화*/
 *,
@@ -17,6 +18,17 @@ a {
 a:hover,
 a:focus {
   color: red;
+}
+
+/* 숨긴 콘텐츠 */
+.a11y-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
 }
 
 html {
@@ -44,14 +56,14 @@ body {
   box-sizing: border-box;
   background-color: pink;
   position: relative;
-  padding: 10px 30px 50px 30px;
+  padding: 0px 30px 50px 30px;
 }
 
 /* 로고 */
 .logo {
   margin: 0;
   position: absolute;
-  top: 50px;
+  top: 45px;
   left: 70px;
 }
 
@@ -59,10 +71,11 @@ body {
 .member {
   list-style-type: none;
   margin: 0;
-  padding-left: 0;
-  background-color: yellowgreen;
+  padding: 2px 0;
   font-size: 0px;
   text-align: right;
+  position: relative;
+  right: -10px;
   /* display: flex;
   justify-content: flex-end;
   height: 100px;
@@ -70,9 +83,56 @@ body {
 }
 .member li{
   display: inline-block;
-  background-color: aqua;
   font-size: 1.4rem;
   text-transform: uppercase;
+}
+/* .member li::before{
+  font-family: "fontello";
+  background-color: orange;
+  content: "\f142";
+} */
+.member li:nth-child(n+2)::before{
+  font-family: "fontello";
+  content: "\f142";
+}
+.member a{
+  padding: 8px 10px;
+  display: inline-block;
+}
+
+/* 메인메뉴 */
+.menu {
+  background-color: #f2401d;
+  background-image: linear-gradient(to bottom, #f48870 0%,#f24421 35%,#f2401d 70%,#f48870 100%);
+  padding-left: 225px;
+  list-style: none;
+  margin: 5px 0 0 0;
+  border-radius: 0 0 5px 5px;
+  /* border-top: 2px solid #181818; */
+  box-shadow: 0 -2px 2px 0 #181818;
+}
+.menu::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.menu-item{
+  float: left;
+  line-height: 45px;
+}
+.btn-menu{
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #fff;
+  text-shadow: 1px 0 0 #181818, -1px 0 0 #181818, 0 1px 0 #181818, 0 -1px 0 #181818;
+}
+.sub-menu{
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  background-color: yellow;
+  position: absolute;
+  display: none; 
 }
 
 .visual {
