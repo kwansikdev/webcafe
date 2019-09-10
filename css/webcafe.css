@@ -21,7 +21,7 @@ a:focus {
 }
 
 /* 숨긴 콘텐츠 */
-.a11y-hidden {
+.a11y-hidden, legend{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -41,6 +41,7 @@ body {
   color: #181818;
   font-family: 'Spoqa Han Sans', 'Sans-serif';
   font-weight: 400;
+  background-color: gray;
 }
 
 .header,
@@ -132,7 +133,6 @@ body {
 }
 
 .btn-menu {
-  height: 45px;
   display: block;
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   padding: 0 20px;
@@ -155,8 +155,8 @@ body {
   margin: 0;
   background-color: yellow;
   position: absolute;
-  display: none;
   white-space: nowrap;
+  display: none;
 }
 
 .sub-menu li, .sub-menu1 a{
@@ -254,16 +254,12 @@ body {
 
 .main-content {
   min-height: 400px;
-  background-color: skyblue;
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   /* 메인축 결정 / 레이아웃을 결정 */
   justify-content: space-between;
   padding: 30px;
-}
-
-.group {
-  background-color: yellow;
 }
 
 .group1 {
@@ -283,6 +279,279 @@ body {
   flex-basis: 190px;
   /* flex-grow: 2; */
 }
+
+/* 로그인 */
+/* 강사님코드 */
+
+.login {
+  background: #f44418 radial-gradient(circle at right top, #fc7019, #f44418);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 5px 5px 0 0 #666;
+}
+
+.login-heading {
+  /* 첫줄 들여쓰기 */
+  text-indent: 10px;
+  font-size: 1.5rem;
+  color: #ff0;
+}
+
+.login-form {
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  margin-top: 10px;
+  padding: 10px 10px 0 10px;
+}
+
+.login-form fieldset{
+  border: 0;
+  padding: 0 0 10px 0;
+  position: relative;
+  border-bottom: 1px solid #aaa;
+}
+
+.login-form label {
+  display: inline-block;
+  width: 4em;
+}
+
+.login-form input {
+  width: 95px;
+  height: 22px;
+  border: 1px solid #aaa;
+  padding: 1px 1px 1px 5px;
+}
+
+.user-pw {
+  margin-top: 6px;
+}
+
+.btn-login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #f44418;
+  background: #f44418;
+  padding: 0;
+  color: #fff;
+  border-radius: 3px;
+  font: inherit;
+}
+
+.sign {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign li {
+  font-size: 1.3rem;
+}
+
+.sign li::before{
+  color: #f44418;
+}
+
+/* 내코드 */
+/* .login {
+  background: #f44418 radial-gradient(circle at right top, #fc7019, #f44418);
+  width: 250px;
+  height: 160px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px gray;
+}
+
+.login-heading {
+  color: yellow;
+}
+
+.login-form {
+  background-color: #fff;
+  width: 230px;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 0;
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+  width: 220px;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.user-email label, .user-pw label {
+  display: inline-block;
+  width: 55px;
+}
+
+.user-email input, .user-pw input {
+  width: 70px;
+}
+
+.btn-login {
+  
+  background-color: #f44418;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.4rem;
+  width: 50px;
+  height: 50px;
+}
+
+.sign {
+  list-style-type: none;
+} */
+
+/* 유요성 검사배너 */
+/* 강사님 코드 */
+
+.validation-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 25px 0 20px 0;
+}
+.validation-list li {
+  margin: 10px 0;
+}
+.validation-list a{
+  background: url('./images/validation_icon.png') no-repeat 20px 50%, linear-gradient(#ccc, #eee);
+  display: block;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  padding: 8px 0 8px 45px;
+}
+
+
+/* 내코드 */
+/* .validation-list {
+  list-style-type: none;
+  margin: 25px 0 20px 0;
+  padding: 0;
+}
+
+.validation-list a {
+  display: block;
+  background: #BABABA radial-gradient(circle at right top, #7f7f7f, #BABABA);
+  margin: 10px 0;
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.validation-list a::before{
+  content: url('./images/validation_icon.png');
+  display: inline-block;
+  padding: 0 2px;
+} */
+
+/* 웹 관련 용아 */
+/* 강사님코드 */
+
+.term {
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.term-heading{
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.term-list {
+  background-color: yellow;
+  margin: 10px 0 0 0;
+}
+
+.term-list::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.term-list-thumbnail, .term-list-brief {
+  margin: 0;
+}
+
+.term-list-subject {
+  margin: -2px 0 5px 0;
+}
+
+.term-list-subject, .term-list-brief {
+  background-color: pink;
+  float: right;
+  width: 145px;
+}
+
+.term-list-thumbnail {
+  background-color: orange;
+  float: left;
+}
+
+.term-list-thumbnail img {
+  vertical-align: top;
+}
+
+.term-list-brief {
+  line-height: 1.5;
+}
+
+.odd {
+  margin: 0 0 10px 0;
+}
+
+.even {
+  margin: 10px 0 0 0;
+}
+
+/* 내코드 */
+/* 
+.term {
+  background: linear-gradient(#ccc, #eee);
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.term-heading {
+  margin: 0;
+}
+.term-list {
+  margin: 15px 0 0 0;
+}
+.term-list-subject {
+  color: #296897;
+  background-color: pink;
+  display: inline;
+  
+}
+
+.term-list-thumbnail {
+  background-color: aqua;
+  float: left;
+  margin: 0 ;
+}
+
+.term-list-brief {
+  background-color: yellow;
+  margin: 0;
+  padding: 10px 0 0 0;
+  line-height: 20px;
+  display: inline-block;
+  width: 145px;
+} */
+
 
 .slogan {
   background-color: orange;
