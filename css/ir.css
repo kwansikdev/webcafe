@@ -19,6 +19,8 @@
   overflow: hidden;
 }
 
+/* 위에 두 기법은 이미지 로딩이 안될시 텍스트가 보이지 않음 */
+
 /* position 트릭 */
 .brand3 {
   background: lime;

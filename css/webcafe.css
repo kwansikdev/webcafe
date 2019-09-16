@@ -908,8 +908,121 @@ input[type="search"]{
 
 /* 이벤트 및 관련사이트 */
 .gradient-box {
-  background-color: yellow;
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px 10px 10px 10px;
+  position: relative;
 }
+
+.event-heading {
+  /* background-color: gray; */
+  margin: 0;
+  padding-left: 3px;
+  font-size: 1.4rem;
+}
+
+.orange {
+  /* background-color: lime; */
+  display: inline-block;
+  color: #f44418;
+}
+
+#event-detail {
+  /* background: aqua; */
+  text-align: center;
+  margin: 20px 0;
+  border-bottom: 1px solid #aaa;
+}
+
+#event-detail p {
+  margin: 0 0 10px -1px;
+}
+
+#event-detail img {
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 0 #aaa;
+}
+
+#event-detail p em {
+  line-height: 2.0;
+}
+
+/* div 하나로  */
+/* .btn-event {
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 18px;
+  overflow: hidden;
+  top: 15px;
+  right: 10px;
+}
+
+.btn-event-pre {
+  width: 19px;
+}
+
+.btn-event-pre::after {
+  content: url("./images/back_forward.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 18px;
+  
+}
+
+.btn-event-next {
+  width: 19px;
+}
+
+.btn-event-next::after {
+  content: url("./images/back_forward.png");
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  top: 0;
+  background-position: 0 0;
+} */
+
+/* 버튼 개별적으로 */
+
+.btn-event-pre {
+  background: purple;
+  position: absolute;
+  top: 15px;
+  right: 31px;
+  width: 20px;
+  height: 18px;
+  overflow: hidden;
+}
+
+.btn-event-pre::after {
+  content: url("./images/back_forward.png");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn-event-next {
+  background: purple;
+  position: absolute;
+  top: 15px;
+  right: 8px;
+  width: 20px;
+  height: 18px;
+  overflow: hidden;
+}
+
+.btn-event-next::after {
+  content: url("./images/back_forward.png");
+  position: absolute;
+  top: 0;
+  right: 0;
+} 
+
+
 
 /* 슬로건 */
 .slogan {
