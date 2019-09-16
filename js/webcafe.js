@@ -1,5 +1,5 @@
 var section = $('.board section');
-var tab = $('tab');
+var tab = $('.tab');
 
 tab.on('click', function(e){
   e.preventDefault();

@@ -114,7 +114,7 @@ body {
   margin: 5px 0 0 0;
   border-radius: 0 0 5px 5px;
   /* border-top: 2px solid #181818; */
-  box-shadow: 0 -2px 2px 0 #181818;
+  4
 }
 
 .menu::after {
@@ -643,7 +643,7 @@ input[type="search"]{
 
 /* 공지사항/자료실 */
 .board {
-  background-color: yellow;
+  /* background-color: yellow; */
   position: relative;
 }
 .board ul, .board .more {
@@ -658,8 +658,9 @@ input[type="search"]{
   margin: 0;
   font-weight: 400;
   font-size: 1em;
-  background-color: pink;
+  /* background-color: pink; */
   position: absolute;
+
   top: 0;
 }
 
@@ -686,21 +687,21 @@ input[type="search"]{
 }
 
 .board ul {
-  background-color: blue;
+  /* background-color: blue; */
   margin: 20px 0;
   padding: 45px 0 0 0;
   list-style-type: none;
 }
 
 .board li {
-  background-color: lime;
+  /* background-color: lime; */
   margin: 8px 0;
   display: flex;
   /* justify-content: space-between; */
 }
 
 .board li a {
-  background-color: silver;
+  /* background-color: silver; */
   width: 270px;
   white-space: nowrap;
   overflow: hidden;
@@ -708,12 +709,12 @@ input[type="search"]{
 }
 
 .board time {
-  background-color: orange;
+  /* background-color: orange; */
   margin-left: auto;
 }
 
 .board .more {
-  background-color: skyblue;
+  /* background-color: skyblue; */
   position: absolute;
   top: 0;
   right: 0;
@@ -723,6 +724,194 @@ input[type="search"]{
   color: hsla(110, 70%, 20%, 1);
 }
 
+/* 새소식 */
+/* 강사님코드 */
+
+.news {
+  margin-top: 20px;
+  position: relative;
+}
+
+.news::before {
+  content: "";
+  background: red linear-gradient(to right, #aaa, #fff);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 80%;
+  height: 1px;
+}
+
+.news-heading {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #f2401d;
+}
+
+.news-link {
+  display: block;
+}
+
+.news-article {
+  padding-left: 130px;
+  position: relative;
+  min-height: 110px;
+}
+
+.news-article-subject {
+  margin: 30px 0 0 0;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.news-article-date {
+  display: block;
+  margin: 5px 0 10px 0;
+}
+
+.news-article-brief {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.news-article-thumbnail {
+  margin: 0;
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.news-article-thumbnail img {
+  box-shadow: 0 15px 15px 0 #aaa;
+}
+
+.news-article-thumbnail figcaption {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.news-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* 내코드 */
+/* .news {5px
+  margin-top: 20px;
+  position: relative;
+}
+
+.news::after {
+  content: "";
+  background: linear-gradient(#aaa, #eee);
+  position: absolute;
+  top: 35px;
+  width: 80%;
+  height: 1px;
+}
+
+.news-heading {
+  margin: 0;
+  color: #ed8625;
+}
+
+.news-article {
+  padding-top: 40px;
+  width: 70%;
+  float: right;
+}
+
+.news-article-subject {
+  background-color: yellow;
+  margin: 0;
+}
+
+.news-article-date {
+  background-color: green;
+}
+
+.news-article-brief {
+  background-color: gray;
+}
+.news-article-thumbnail {
+  margin: 0;
+  display: block;
+  width: 100px;
+  position: absolute;
+  top: 65px;
+  left: 0;
+}
+
+.news-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+
+/* .news-notice {
+  position: relative;
+}
+
+.news-heading {
+  padding: 0 0 10px 0;
+  width: 300px;
+  font-size: 1.6rem;
+  border-bottom: 1px solid #ccc;
+  color: #f2401d;
+}
+
+.news-item {
+  background-color: pink;
+  float: right;
+}
+
+.news-item-heading {
+  background-color: blue;
+  margin-left: 130px;
+}
+
+.news-item time {
+  background-color: gray;
+  margin-left: 130px;
+}
+
+.news-item-content {
+  background-color: yellow;
+  margin-left: 130px;
+  
+}
+.news-item-thumnail {
+  background-color: yellow;
+  margin: 0;
+  float: left;
+}
+
+.news-item-thumnail img {
+  padding: 10px;
+}
+
+.news-item-thumnail figcaption {
+  padding: 10px;
+  margin: auto;
+}
+
+.notice-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.notice-more::before {
+  color: hsla(110, 70%, 20%, 1);
+} */
+
+/* 이벤트 및 관련사이트 */
+.gradient-box {
+  background-color: yellow;
+}
+
+/* 슬로건 */
 .slogan {
   background-color: orange;
   padding: 15px 0;

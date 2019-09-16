@@ -1,0 +1,169 @@
+@charset "utf-8";
+@import url('https://necolas.github.io/normalize.css/latest/normalize.css');
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+@import url('./fontello.css');
+
+/*초기화*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a:focus {
+  color: red;
+}
+
+/* 숨긴 콘텐츠 */
+.a11y-hidden, legend{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+  margin: 50px;
+  color: #181818;
+  font-family: 'Spoqa Han Sans', 'Sans-serif';
+  font-weight: 400;
+  background-color: #fff;
+}
+
+/* 탭 ui */
+
+.board {
+  position: relative;
+}
+
+.tab-list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tab-list, .board-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.tab-list li {
+  float: left;
+}
+
+[role="tab"] {
+  background: #ccc linear-gradient(#ccc, #eee);
+  color: #aaa;
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+}
+
+[role="tab"][aria-selected="true"] {
+  color: #ed8625;
+  border-color: #ed8625 #ed8625 #fff #ed8625;
+  background: #fff;
+}
+
+.tab-content {
+}
+
+.notice, .pds {
+  display: none;
+}
+.tab-content-act {
+  display: block !important;
+}
+
+.board-list {
+  margin-top: 20px;
+}
+
+.board-list li {
+  display: flex;
+  margin: 5px;
+}
+
+.board-list time {
+  margin-left: auto;
+}
+
+.board-list a {
+  width: 285px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.more {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  padding: 5px;
+}
+
+.more::before {
+  color: hsla(110, 50%, 20%, 1);
+}
+/* 내코드 */
+/* .board {
+  width: 600px;
+  position: relative;
+
+}
+.tab-content {
+
+}
+
+[aria-selected="true"] {
+  color: #ed8625;
+  border-color: #ed8625 #ed8625 #fff #ed8625;
+  background: #fff;
+}
+
+.tab-list li {
+  list-style: none;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  background: #ccc linear-gradient(#ccc, #eee);
+  padding: 5px;
+  float: left;
+}
+
+.board-list {
+  list-style-type: none;
+  padding: 40px 0 0 40px;
+}
+
+.board-list li {
+  display: flex;
+}
+
+.board-list time {
+  margin-left: auto;
+}
+
+.notice-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.pds {
+  display: none;
+} */
