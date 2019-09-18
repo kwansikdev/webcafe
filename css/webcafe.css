@@ -314,6 +314,7 @@ body {
 .login-form label {
   display: inline-block;
   width: 4em;
+  cursor: pointer;
 }
 
 .login-form input {
@@ -906,8 +907,144 @@ input[type="search"]{
   color: hsla(110, 70%, 20%, 1);
 } */
 
+
+
 /* 이벤트 및 관련사이트 */
+
 .gradient-box {
+  background: #ccc linear-gradient(#ccc, #eee);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.point-color{
+  color: #f24421;
+}
+
+.event1, .related  {
+  margin: 0 10px;
+}
+
+.event1 {
+  position: relative;
+}
+
+.related {
+  border-top: 1px solid #aaa;
+}
+
+.event-heading, .related-heading {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.event1 img {
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 0 0 #aaa;
+}
+
+.event1 p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.event1 em {
+  font-style: normal;
+}
+
+.btn-event {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn-event button {
+  background-color: transparent;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.btn-event button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image : url("./images/back_forward.png");
+  background-repeat:  no-repeat;
+}
+.btn-event-next::after {
+  background-position: 100% 0 !important;
+}
+
+.related-list {
+  background: #fff;
+  padding-left: 0;
+  list-style-type: none;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  height: 27px;
+  overflow: hidden;
+  transition: height 0.4s 0s, padding 0.4s 0.8s, background 0.4s 1.4s;
+}
+
+.related-list:hover,
+.related-list:focus {
+  height: 147px;
+  padding: 10px 0;
+  background: yellow;
+}
+
+.related-list li {
+  height: 25px;
+  padding: 2px;
+  position: relative;
+}
+
+.related-list a {
+  width: calc(100% - 4px);
+  padding: 2px 0 0 1em;
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* 내코드 */
+/* .related-list {
+  list-style-type: none;
+  background: yellow;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  height: 29px;
+  margin: 10px 0;
+  padding-left: 1em;
+}
+
+.related-list li:nth-child(n+2) {
+  display: none;
+}
+
+.related-list li {
+  margin: 5px 0;
+}
+
+.related-list a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+} */
+
+/* 내코드 */
+/* .gradient-box {
   background: #ccc linear-gradient(#ccc, #eee);
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -916,22 +1053,19 @@ input[type="search"]{
 }
 
 .event-heading {
-  /* background-color: gray; */
   margin: 0;
   padding-left: 3px;
   font-size: 1.4rem;
 }
 
 .orange {
-  /* background-color: lime; */
   display: inline-block;
   color: #f44418;
 }
 
 #event-detail {
-  /* background: aqua; */
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0 20px 0;
   border-bottom: 1px solid #aaa;
 }
 
@@ -946,7 +1080,8 @@ input[type="search"]{
 
 #event-detail p em {
   line-height: 2.0;
-}
+} */
+
 
 /* div 하나로  */
 /* .btn-event {
@@ -960,67 +1095,75 @@ input[type="search"]{
 }
 
 .btn-event-pre {
-  width: 19px;
+  width: 18px;
+  cursor: pointer;
 }
 
 .btn-event-pre::after {
-  content: url("./images/back_forward.png");
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 21px;
   height: 18px;
-  
+  background: url("./images/back_forward.png") no-repeat;
 }
 
 .btn-event-next {
-  width: 19px;
+  width: 18px;
+  cursor: pointer;
 }
 
 .btn-event-next::after {
-  content: url("./images/back_forward.png");
+  content: "";
   position: absolute;
-  width: 20px;
+  width: 21px;
   height: 18px;
   top: 0;
-  background-position: 0 0;
+  right: 0;
+  background: url("./images/back_forward.png") no-repeat;
+  background-position: -37px 0 !important;
 } */
 
 /* 버튼 개별적으로 */
 
-.btn-event-pre {
-  background: purple;
+/* .btn-event-pre {
   position: absolute;
   top: 15px;
   right: 31px;
-  width: 20px;
+  width: 19px;
   height: 18px;
   overflow: hidden;
 }
 
 .btn-event-pre::after {
-  content: url("./images/back_forward.png");
+  content: "";
+  background-image: url("./images/back_forward.png");
   position: absolute;
   top: 0;
   left: 0;
+  width: 21px;
+  height: 20px;
 }
 
 .btn-event-next {
-  background: purple;
   position: absolute;
   top: 15px;
   right: 8px;
-  width: 20px;
+  width: 19px;
   height: 18px;
   overflow: hidden;
 }
 
 .btn-event-next::after {
-  content: url("./images/back_forward.png");
+  content: "";
+  background-image: url("./images/back_forward.png");
   position: absolute;
-  top: 0;
+  top: -1px;
   right: 0;
-} 
+  width: 19px;
+  height: 18px;
+}  */
 
 
 
