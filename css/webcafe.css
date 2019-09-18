@@ -31,6 +31,13 @@ a:focus {
   white-space: nowrap;
 }
 
+/* clearfix - float 이슈를 해결하기 위해 선언 */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 html {
   font-size: 10px;
 }
@@ -642,7 +649,7 @@ input[type="search"]{
   margin-left: 3px;
 } */
 
-/* 공지사항/자료실 */
+/* 지사항/자료실 */
 .board {
   /* background-color: yellow; */
   position: relative;
@@ -921,7 +928,8 @@ input[type="search"]{
   color: #f24421;
 }
 
-.event1, .related  {
+.event1, 
+.related {
   margin: 0 10px;
 }
 
@@ -933,7 +941,9 @@ input[type="search"]{
   border-top: 1px solid #aaa;
 }
 
-.event-heading, .related-heading {
+.event-heading, 
+.related-heading,
+.favorite-heading {
   margin: 10px 0;
   font-size: 1.5rem;
 }
@@ -1165,7 +1175,179 @@ input[type="search"]{
   height: 18px;
 }  */
 
+/* 인기사이트 */
+/* 강사님코드 */
 
+.favorite {
+  margin-top: 20px;
+  padding: 0 10px;
+  position: relative;
+}
+
+.point-color {
+  color: #f24421;
+}
+
+.favorite-list {
+  padding-left: 0;
+  list-style-type: none;
+  counter-reset: 0;
+}
+
+.favorite-list li {
+  counter-increment: number;
+  margin: 8px 0;
+  position: relative;
+  /* display: flex;
+  align-items: center; */
+}
+
+.favorite-list li::before {
+  content: counter(number);
+  color: #fff;
+  font-size: 1.2rem;
+  background: #999;
+  border-radius: 3px;
+  padding: 2px 5px;
+  margin-right: 5px;
+  /* float: left; */
+  display: inline-block;
+
+}
+
+.favorite-list a {
+  /* float: left; */
+  vertical-align: middle;
+}
+
+.favorite-list em {
+  background: url("images/rank.png") no-repeat;
+  /* margin-left: auto; */
+  font-style: normal;
+  width: 9px;
+  height: 11px;
+  text-indent: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  /* float: right; */
+  position: absolute;
+  margin-top: -5px;
+  top: 50%;
+  right: 0;
+}
+
+em.stop {
+  background-position: 0 50% ;
+}
+
+em.down {
+  background-position: 0 100%;
+}
+
+.favorite-more {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.favorite-more::before {
+  color: hsla(110, 70%, 20%, 1);
+}
+
+
+
+/* 내코드 */
+/* 
+.favorite {
+  margin: 0;
+  padding: 10px 10px 5px 10px;
+  position: relative;
+}
+
+.favorite-heading {
+  margin: 0; 
+  font-size: 1.5rem;
+}
+
+.point-color {
+  color: #f24421;
+}
+
+.favorite-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 10px 0 0 0;
+}
+
+.favorite-list li {
+  background-color: yellow;
+  line-height: 1.5;
+  display: flex;
+  padding-bottom: 5px;
+  position: relative;
+  }
+
+
+  .favorite-list a {
+    background-color: lime;
+    padding-left: 5px;
+  }
+
+  .favorite-list em {
+    margin-left: auto;
+    width: 23px;
+    padding-left: 23px;
+    white-space: nowrap;
+    overflow: hidden;
+    background: aqua;
+  }
+
+  .favorite-list li::before {
+    background-color: gray;
+    display: block;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0 5px;
+    color: #fff;
+  }
+
+  .no1::before {
+    content: "1";
+  }
+
+  .no2::before {
+    content: "2";
+  }
+
+  .no3::before {
+    content: "3";
+  }
+
+  .no4::before {
+    content: "4";
+}
+
+.favorite-list em::after {
+  content: "";
+  width: 23px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("images/rank.png") no-repeat;
+}
+
+
+.favorite-more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 10px 0 0;
+}
+
+.favorite-more::before {
+  color: hsla(110, 70%, 20%, 1);
+} */
 
 /* 슬로건 */
 .slogan {
