@@ -1447,6 +1447,8 @@ em.down {
 */
 
 /* 푸터 */
+/* 강사님 코드 */
+
 .footer-bg {
   background-color: silver;
   padding: 15px 0;
@@ -1454,5 +1456,106 @@ em.down {
 }
 
 .footer {
-  background-color: yellow;
+  position: relative;
+  padding: 0 100px 0 150px;
 }
+
+/* 푸터로고 */
+.footer-logo {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+}
+
+.guide-list {
+  background: #7b8385;
+  color: #fff;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+.guide-list a {
+  display: block;
+  padding: 8px 10px;
+  text-transform: uppercase;
+}
+
+/* 연락처 정보 */
+.address {
+  font-style: normal;
+  margin: 10px 0 5px 0;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+/* 내코드 */
+/* .footer-bg {
+  background-color: silver;
+  padding: 15px 0;
+  background: #ccc linear-gradient(#ccc, #eee, #fff);
+}
+
+.footer {
+  background-color: yellow;
+  padding: 0 0 0 150px;
+  position: relative;
+  
+}
+
+.footer-logo {
+  background: pink;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+
+.guide-list {
+  background: gray;
+  list-style-type: none;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  width: 690px;
+  height: 45px;
+  display: flex;
+  line-height: 45px;
+  text-align: center;
+  color: #fff;
+}
+
+.guide-list li {
+  margin: 0 auto;
+}
+
+.address {
+  background: green;
+  margin: 3px 0;
+}
+.address span {
+  padding: 0 10px 0 0;
+}
+
+.copyright {
+  display: block;
+  background: blue;
+  font-size: 1.4rem;
+  margin: 5px 0;
+}
+
+.badge {
+  background: purple;
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
